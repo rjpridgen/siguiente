@@ -1,5 +1,5 @@
+import { test } from "@siguiente/lib/crypto/ca";
 import { serve } from "bun";
-import index from "./public/index.html";
 import type { ConsolaInstance } from "consola";
 import { renderToReadableStream } from "react-dom/server";
 
@@ -13,6 +13,9 @@ function Component(props: { message: string }) {
 
 export function start(cli: ConsolaInstance, port = 4545) {
     const server = serve({
+        tls: {
+
+        },
         error(error) {
             cli.error(error.code, error.message)
         },
@@ -25,7 +28,7 @@ export function start(cli: ConsolaInstance, port = 4545) {
                 headers: { "Content-Type": "text/html" },
               });
             },
-            "/api/hello": { GET: () => Response.json({ message: "Hello from API" }) },
+            "/api/hello": { GET: () => Response.json(test()) },
         },
         port
     });

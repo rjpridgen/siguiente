@@ -1,9 +1,12 @@
 import { from } from "@siguiente/lib/crypto/key"
 import { consola } from "consola"
+import { start } from "./web"
 
-const password = await consola.prompt("Secret password", {
-    type: "text",
-    placeholder: "super secret key"
-})
-
-consola.info(from(password))
+switch (await consola.prompt("Siguiente", {
+    type: "select",
+    options: ["Web"]
+})) {
+    case "Web":
+        start(consola)
+        break
+}

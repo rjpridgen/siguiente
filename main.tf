@@ -30,5 +30,5 @@ resource "cloudflare_zero_trust_list" "github_git_cidr" {
   name = "Github Git IP"
   description = ""
   type = "IP"
-  items = [ ip in local.git : { value = ip } ]
+  items = [ for ip in local.git : { value = ip } ]
 }

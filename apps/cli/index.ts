@@ -1,3 +1,9 @@
-import { key } from "@siguiente/lib/crypto/key"
+import { from } from "@siguiente/lib/crypto/key"
+import { consola } from "consola"
 
-console.log(key())
+const password = await consola.prompt("Secret password", {
+    type: "text",
+    placeholder: "super secret key"
+})
+
+consola.info(from(password))

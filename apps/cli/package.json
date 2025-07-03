@@ -14,6 +14,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@siguiente/lib": "workspace:^"
+    "@siguiente/lib": "workspace:^",
+    "consola": "^3.4.2"
   }
 }

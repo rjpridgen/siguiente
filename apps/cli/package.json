@@ -4,15 +4,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bun build --compile --bytecode --minify --target bun --outfile cli index.ts"
+    "build": "bun build --compile --minify --target bun --format esm --outfile cli index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "bun": "1.2.17"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "@siguiente/lib": "workspace:^"
+    "@siguiente/lib": "workspace:^",
+    "consola": "^3.4.2"
   }
 }

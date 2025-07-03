@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bun build --compile --bytecode --minify --target bun --outfile cli index.ts"
+    "build": "bun build --compile --minify --target bun --format esm --outfile cli index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",

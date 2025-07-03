@@ -7,10 +7,9 @@
     "build": "bun build --bundle --minify --outdir .output --target bun --format esm index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "@types/bun": "latest",
+    "bun": "1.2.17",
+    "typescript": "5.8.3"
   },
   "dependencies": {
     "@noble/curves": "^1.9.2"

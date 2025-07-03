@@ -1,3 +1,3 @@
-import { test } from "@siguiente/lib"
+import { key } from "@siguiente/lib/crypto/key"
 
-test()
+console.log(key())

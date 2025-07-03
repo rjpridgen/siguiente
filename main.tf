@@ -16,7 +16,7 @@ data "http" "github" {
 }
 
 data "cloudflare_account" "siguiente" {
-  filter {
+  filter = {
     name = "Siguiente"
   }
 }

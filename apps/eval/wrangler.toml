@@ -1,7 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
 # For more details on how to configure Wrangler, refer to:
 # https://developers.cloudflare.com/workers/wrangler/configuration/
-name = "eval"
+name = "zerotrust-external-eval"
 workers_dev = true
 compatibility_date = "2024-08-06"
 main = "index.js"

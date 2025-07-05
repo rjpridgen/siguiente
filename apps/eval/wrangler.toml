@@ -8,10 +8,10 @@ main = "index.js"
 
 [[kv_namespaces]]
 binding = "KV"
-id = "<update>"
+id = "ca3cc5441f7c41068391eab0d1a4162b"
 
 [vars]
-TEAM_DOMAIN = "<update>.cloudflareaccess.com"
+TEAM_DOMAIN = "siguiente-seguridad.cloudflareaccess.com"
 DEBUG = false
 
 [observability]
